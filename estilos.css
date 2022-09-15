@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  height: 100%;
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%; 
+   
+}
+
+.contenedor {
+  display: grid;
+  gap: 5px;
+  grid-template: 
+  "navbar" 50px
+  "header" auto
+  "main"  auto
+  "footer" 20px
+  ;
+}
+
+.header{
+  grid-area: header;
+  background-color: #cbc0d3;
+}
+
+
+.navbar{
+  grid-area: navbar;
+  background-color: #8e9aaf;
+}
+
+.main{
+  grid-area: main;
+  background-color: #efd3d7;
+}
+
+.footer{
+  grid-area: footer;
+  background-color: #bb8588;
+}
+
+@media (min-width: 576px) {
+
+  .contenedor{
+
+    grid-template: 
+    "navbar   navbar"   80px
+    "header   header"   250px 
+    "main    main"     auto
+    "footer   footer"   80px /
+     200px    auto;
+  }
+
+}
+
+@media (min-width: 768px) {
+
+  .contenedor{
+
+    grid-template: 
+    "navbar   navbar"   80px
+    "header   header"   380px 
+    "main    main"     auto
+    "footer   footer"   70px /
+     200px    auto;
+  }
+
+}
+
+
+@media (min-width: 992px) {
+  .contenedor{
+    grid-template: 
+    "navbar   navbar  navbar"  60px
+    "header   header  header"  230px
+    "main   main    main"  auto
+    "footer   footer  footer"   40px /
+     400px    auto  200px;
+  }
+}
