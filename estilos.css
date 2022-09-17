@@ -14,12 +14,12 @@ body{
   font-family: 'Open Sans', sans-serif;
   font-size: 1.2rem;
   min-height: 100%; 
-   
+  background-color: #FFFCF6;
 }
 
 .contenedor {
   display: grid;
-  gap: 5px;
+  /*gap: 5px;*/
   grid-template: 
   "navbar" 50px
   "header" auto
@@ -30,35 +30,197 @@ body{
 
 .header{
   grid-area: header;
-  background-color: #cbc0d3;
+  
 }
 
 
 .navbar{
   grid-area: navbar;
-  background-color: #8e9aaf;
+  
 }
 
 .main{
   grid-area: main;
-  background-color: #efd3d7;
+  flex-direction: column;
+ /*display: flex;
+ 
+ vertical-align: middle;*/
 }
 
 .footer{
   grid-area: footer;
-  background-color: #bb8588;
+  background-color: #EFCEC0;
+  
 }
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    width: 38%;
+   margin: 3px;
+   float: right;
+}
+
+
+nav ul li a {
+    color: #E99598;
+    font-size: 1.7rem;
+    padding-right: 9rem;
+}
+
+.navbar a:hover {
+    color:#F5E1CE;
+}
+
+.navbar {
+    padding: 1.1rem;
+    padding-top: 1rem;
+    text-align: center;
+    font-family: 'Martel', serif;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.slider {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /*height: 100px;*/
+    align-items: center;
+    
+}
+
+#contenedor2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /*position: sticky;
+  vertical-align: top;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 50%;*/
+}
+
+#contenedor2 div {
+    /*margin-top: 2%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+      margin-top: 5%;
+    display: block;
+    flex-wrap: wrap;*/
+   text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+   
+}
+
+.charlottepng {
+  padding-left: 200px;
+}
+
+.png {
+  width: 55%;
+  height: auto;
+  text-align: center;
+  float: right;
+ 
+  margin-right: 11px;
+}
+
+.info {
+  flex-direction: column;
+  /*text-align: right;
+  float: right;
+  width: 50%;
+  clear: right;*/
+  margin-right: 300px;
+}
+
+h1 {
+  text-align: left;
+
+}
+
+.texto1{
+    color: black;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-top: 8px;
+    /*display: inline-block;
+    width: 50%;*/
+   
+}
+
+
+.redes {
+  float: right;
+  margin-right: 70px;
+}
+
+footer {
+    display: block;
+    
+    align-items: center;
+    background-color: white; 
+    text-align: center;
+}
+
+footer div p {
+  float: left;
+  margin-left: 70px;
+}
+
+footer ul a img {
+    max-width: 1.8rem;
+    width: 100%;
+    height: auto;
+    margin: 4px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media (min-width: 576px) {
 
   .contenedor{
 
     grid-template: 
+    "header header" 100px
     "navbar   navbar"   80px
-    "header   header"   250px 
     "main    main"     auto
     "footer   footer"   80px /
-     200px    auto;
+    100%
   }
 
 }
@@ -68,12 +230,12 @@ body{
   .contenedor{
 
     grid-template: 
-    "navbar   navbar"   80px
-    "header   header"   380px 
+    "header   navbar"   80px
     "main    main"     auto
     "footer   footer"   70px /
-     200px    auto;
+     400px    auto;
   }
+
 
 }
 
@@ -81,10 +243,18 @@ body{
 @media (min-width: 992px) {
   .contenedor{
     grid-template: 
-    "navbar   navbar  navbar"  60px
-    "header   header  header"  230px
+    "header   navbar  navbar"  60px
     "main   main    main"  auto
     "footer   footer  footer"   40px /
      400px    auto  200px;
+  }
+}
+  @media (min-width: 1200px) {
+    .contenedor{
+      grid-template: 
+      "header   navbar navbar  navbar"  60px
+      "main   main    main   main"  auto
+      "footer   footer  footer  footer"   40px /
+       200px    auto   auto   200px;
   }
 }
