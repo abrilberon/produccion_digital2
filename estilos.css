@@ -116,7 +116,7 @@ nav ul li {
         text-align: center;
         justify-content: center;
         width: 100%;
-      margin-top: 5%;
+            margin-top: 5%;
     display: block;
     flex-wrap: wrap;*/
    text-align: center;
@@ -183,7 +183,6 @@ footer div p {
   float: left;
   margin-left: 70px;
 }
-
 footer ul a img {
     max-width: 1.8rem;
     width: 100%;
@@ -211,36 +210,357 @@ footer ul a img {
 
 
 
-@media (min-width: 576px) {
+@media (min-width: 576px) and (max-width: 767px) {
 
   .contenedor{
 
     grid-template: 
-    "header header" 100px
-    "navbar   navbar"   80px
-    "main    main"     auto
-    "footer   footer"   80px /
+    "header navbar" 90px
+    "main"     auto
+    "footer"   90px /
     100%
   }
+ .fa-navicon:before, .fa-reorder:before, .fa-bars:before {
+            content: "\f0c9";
+    color: black;
+    display: flex;
+    margin-left: 455px;
+    margin-top: 57px;
+}
+    
+
+    nav {
+    flex-wrap: wrap;
+    }
+
+ nav ul {
+        display: none;
+    }
+
+    .icon { 
+        display: block; 
+        text-align: left;
+    }
+
+    nav a {
+        flex: 1 0 50%;
+    }
+
+    nav {
+        flex-basis: 100%;
+    }
+
+nav.responsive ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: justify;
+    }
+
+     #navegador ul li {
+        margin: 6px;
+    }
+
+
+
+.logo {
+  width: 15%;
+    margin: 0px;
+    float: left;
+    padding-left: 80px;
+}
+
+
+nav ul li a {
+    color: #E99598;
+    font-size: 1.7rem;
+    padding-right: 9rem;
+}
+
+.navbar a:hover {
+    color:#F5E1CE;
+}
+
+.navbar {
+    
+     padding: 0px;
+    padding-top: 29px;
+    text-align: left;
+    font-family: 'Martel', serif;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.slider {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /*height: 100px;*/
+    align-items: center;
+    
+}
+
+#contenedor2 {
+  justify-content: center;
+    text-align: center;
+    align-items: center;
+    display: inline-block;
+}
+
+#contenedor2 div {
+    /*margin-top: 2%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+            margin-top: 5%;
+    display: block;
+    flex-wrap: wrap;*/
+   text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    display: inline-block;
+
+   
+}
+
+.charlottepng {
+  padding-left: 0px;
+}
+
+.png {
+       width: 28%;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-right: 0px;
+    margin-left: 94px;
+    justify-content: center;
+    vertical-align: middle;
+    position: relative;
+  }
+
+.info {
+  flex-direction: column;
+  /*text-align: right;
+  float: right;
+  width: 50%;
+  clear: right;*/
+  margin-right: 300px;
+}
+
+h1 {
+        justify-content: center;
+    text-align: center;
+    float: left;
+    margin-left: 146px;
+    font-size: 38px;
+    position: absolute;
+    margin-top: -32px;
+}
+
+.texto1{
+   color: black;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-top: 30px;
+    float: left;
+    margin-left: 63px;
+    margin-right: 838px;
+    margin-bottom: 29px;
+}
+
+
+.redes {
+ margin-right: 786px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    text-align: center;
+    height: 90px;
+    flex-direction: column;
+}
+
+footer div p {
+  margin-right: 783px;
+    margin-top: 5px;
+    font-size: 22px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+footer ul a img {
+    max-width: 2.4rem;
+    width: 100%;
+    height: auto;
+    margin: 4px;
+}
 
 }
 
-@media (min-width: 768px) {
+
+
+@media (min-width: 768px) and (max-width: 991px){
 
   .contenedor{
 
     grid-template: 
     "header   navbar"   80px
     "main    main"     auto
-    "footer   footer"   70px /
-     400px    auto;
+    "footer   footer"   50px /
+     50%    50%;
+  }
+  .logo {
+    width: 58%;
+    margin: 0px;
+    float: left;
+    padding-left: 120px;
   }
 
+nav ul li a {
+    color: #E99598;
+    font-size: 1.7rem;
+    padding-right: 3rem;
+}
 
+ul {
+  display: inline-block;
+}
+
+.navbar a:hover {
+    color:#F5E1CE;
+}
+
+.navbar {
+    padding: 0px;
+    padding-top: 29px;
+    text-align: left;
+    font-family: 'Martel', serif;
+    
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+.slider {
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    /*height: 100px;*/
+    align-items: center;
+    
+}
+
+#contenedor2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  /*position: sticky;
+  vertical-align: top;
+  margin-left: 200px;
+  margin-right: 200px;
+  width: 50%;*/
+}
+
+#contenedor2 div {
+    /*margin-top: 2%;
+        display: block;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+            margin-top: 5%;
+    display: block;
+    flex-wrap: wrap;*/
+   text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+   
+}
+
+.charlottepng {
+  padding-left: 180px;
+}
+
+.png {
+  width: 106%;
+  height: auto;
+  text-align: center;
+  float: right;
+ 
+  margin-right: 11px;
+}
+
+.info {
+  flex-direction: column;
+  /*text-align: right;
+  float: right;
+  width: 50%;
+  clear: right;*/
+  margin-right: 133px;
+}
+
+h1 {
+  text-align: left;
+font-size: 20px;
+}
+
+.texto1{
+     color: black;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    margin-top: 15px;
+   
 }
 
 
-@media (min-width: 992px) {
+.redes {
+  float: right;
+  margin-right: 28px;
+  margin-top: 4px;
+}
+
+footer {
+    display: block;
+    
+    align-items: center;
+    background-color: white; 
+    text-align: center;
+}
+
+footer div p {
+  float: left;
+  margin-left: 28px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+footer ul a img {
+    max-width: 2.1rem;
+    width: 100%;
+    height: auto;
+    margin: 4px;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1999px) {
   .contenedor{
     grid-template: 
     "header   navbar  navbar"  60px
@@ -248,7 +568,7 @@ footer ul a img {
     "footer   footer  footer"   40px /
      400px    auto  200px;
   }
-}
+
   @media (min-width: 1200px) {
     .contenedor{
       grid-template: 
@@ -258,3 +578,4 @@ footer ul a img {
        200px    auto   auto   200px;
   }
 }
+
